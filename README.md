@@ -1,2 +1,2 @@
 # proyecto-doppio2
-pre-entregable 2 coderhouse
+pre-entregables del curso de"desarrollo web" by coderhouse
