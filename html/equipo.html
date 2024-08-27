@@ -28,7 +28,7 @@
         <!--menu de navegacion  -->
         <nav>
             <ul class="navbar-ul">
-                <li><a href="../index.html" class="navbar-items">Inico</a></li>
+                <li><a href="../index.html" class="navbar-items">Inicio</a></li>
                 <li><a href="nosotros.html" class="navbar-items">Nosotros</a></li>
                 <li><a href="menu.html" class="navbar-items">Menu</a></li>
                 <li><a href="equipo.html" class="navbar-items">Equipo</a></li>
@@ -38,22 +38,66 @@
     </header>
     <!-- fin del header -->
 
+    <main>
 
+    <h1 class="title-equipo">¿QUIERES FORMAR PARTE DE NUESTRO EQUIPO?</h1>
+    
+    <div class="container">
+        <div id="login-form" class="form-group">
+            <h2>Login</h2>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" required>
+            <label for="login-password">Contraseña:</label>
+            <input type="password" id="login-password" required>
+            <button type="submit">Iniciar Sesión</button>
+            <span class="toggle-link" onclick="toggleForms()">¿No tienes cuenta? Regístrate</span>
+            </div>
+            <div id="register-form" class="form-group">
+                <h2>Registro</h2>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" required>
+                <label for="register-password">Contraseña:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">Registrarse</button>
+                <span class="toggle-link" onclick="toggleForms()">¿Ya tienes cuenta? Inicia Sesión</span>
+            </div>
+        </div>
+
+        <!-- un poco de java -->
+        <script>
+        function toggleForms() {
+                const loginForm = document.getElementById('login-form');
+                const registerForm = document.getElementById('register-form');
+                if (loginForm.style.display === 'none') {
+                    loginForm.style.display = 'block';
+                    registerForm.style.display = 'none';
+                } else {
+                    loginForm.style.display = 'none';
+                    registerForm.style.display = 'block';
+                }
+            }
+        </script>
+        
+    </main>
 
 
     
 
-    <footer>
-        <p>Seguinos tambien en:</p>
-
+    <footer class="footer">
         <section>
-            <div><ul class="footer-items-ul">
+            <div class="footer-img">
+                <img src="../imagenes/payment.png" alt="payment">
+            </div>
+
+            <div class="footer-items-container">
+                <ul class="footer-items-ul">
                     <li class="footer-items"><a href="">instagram</a></li>
                     <li class="footer-items"><a href="">facebook</a></li>
                     <li class="footer-items"><a href="">twitter</a></li>
                 </ul>
             </div>
         </section>
+        <p class="footer-copy">Doppio 2022 - Todos los derechos reservados</p>
     </footer>
     
     <!-- scripts de bootrap-->
