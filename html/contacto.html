@@ -39,21 +39,47 @@
     <!-- fin del header -->
 
     <main>
-        
+        <h1>Completa el formulario para unirte al lado doppio</h1>
+
+        <section id="contacto">
+            <h2>Contacto </h2>
+            <p class="text-contacto">Nos encantaría saber de ti. Completa el formulario a continuación o utiliza cualquiera de los métodos de contacto proporcionados.</p>
+            
+            <form action="/enviar-mensaje" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+                <p><strong>Email:</strong> Doppio123@gmail.com</p>
+                <p><strong>Dirección:</strong> Calle Falsa 123, Buenos Aires, Argentina</p>
+            </div>
+            
+            <div class="social-media">
+                <h3>Síguenos en Redes Sociales</h3>
+                <a href="https://facebook.com/tucafeteria" target="_blank">Facebook</a>
+                <a href="https://instagram.com/tucafeteria" target="_blank">Instagram</a>
+                <a href="https://twitter.com/tucafeteria" target="_blank">Twitter</a>
+            </div>
+        </section>
     </main>
     <!-- fin del main  -->
+
+    <!-- footer -->
     <footer class="footer">
         <section>
             <div class="footer-img">
                 <img src="../imagenes/payment.png" alt="payment">
-            </div>
-
-            <div class="footer-items-container">
-                <ul class="footer-items-ul">
-                    <li class="footer-items"><a href="">instagram</a></li>
-                    <li class="footer-items"><a href="">facebook</a></li>
-                    <li class="footer-items"><a href="">twitter</a></li>
-                </ul>
             </div>
         </section>
         <p class="footer-copy">Doppio 2022 - Todos los derechos reservados</p>

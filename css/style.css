@@ -124,14 +124,15 @@ footer{
     display: flex;
     margin-top: 15px;
     background-color: #502514;
-    color: #fcc21b;
+    color:#FCC12B;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
     overflow: hidden;
-    border-top: 1px solid gray;
-    list-style: none;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 5%;
 }
 
 .footer-items-ul{
@@ -139,22 +140,16 @@ footer{
     list-style: none;
     flex-wrap: nowrap; 
     justify-content: space-evenly;
-    color: #fcc21b;
+    color:#015e54;
 }
 
 .footer-items:hover{
-    color: #FCC12B;
+    list-style: none;
     transition: 0.24s;
+    color: #FCC12B;
 }
 
-
 .footer-img{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    color: #fcc21b;
-    font-weight: bold;
-    flex-shrink: 2;
     margin-left: 5px;
 }
 
@@ -162,7 +157,6 @@ footer{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    color: #fcc21b;
     font-weight: bold;
     flex-shrink: 2;
     margin-left: 15px;
@@ -293,9 +287,66 @@ h2{
     display: none;
 }
 
-/* estilos para Contacto .....*/
+.subtitle-equipo{
+    color: #fff;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
 
-/* medias querys para responsive*/
+/* estilos para Contacto .....*/
+section#contacto {
+    padding: 20px;
+    background-color: #015e54;
+    color: #fff;
+}  
+
+.text-contacto{
+    text-align: center;
+}
+
+h2, h3 {
+    color: #fcc21b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info, .social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* media querys para responsive*/
 
 /* mobile */
 @media only screen and (max-width:500px){
@@ -412,6 +463,8 @@ h2{
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
     }
+
+
 }
 
 
