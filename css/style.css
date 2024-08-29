@@ -203,27 +203,27 @@ footer{
     display: flex;
     flex-flow:row wrap;
     justify-content: space-evenly;
-    margin: 15px;
+    margin: auto;
     min-width: 250px;
-    border: 2px solid black;
+    border: 2px solid gray;
     background-color:#015e54;
     color:#502514;
     align-self: center;
-    /* max-width: 900px; */
     min-height: 300px;
     
 }
 
 .img-items{
     display: flex;
-    max-width: 400px;
+    max-width: 300px;
+    height: 200px;
     border: 2px solid black;
     border-radius: 25%;
     background-color :#502514;
     color: #FCC12B;
     text-decoration: none;
     padding: 4px;
-    margin: auto;
+    margin: 10px;
 }
 
 .img-texto{
@@ -243,6 +243,11 @@ h2{
 }
 
 /*estilos para Equipo */
+
+.subtitle-equipo{
+    display: flex;
+    flex-direction: column;
+}
 
 .container {
     background-color: #015e54;
